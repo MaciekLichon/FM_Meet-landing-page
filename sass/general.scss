@@ -1,0 +1,120 @@
+@import './variables.scss';
+
+body {
+  font-family: $ff-regular;
+  font-size: $fs-regular-mobile;
+  font-weight: $fw-regular;
+  color: $clr-500;
+  background-color: $clr-100;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 1110px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.subheader {
+  font-size: $fs-subheader-mobile;
+  line-height: $lh-subheader-mobile;
+  margin-bottom: 2rem;
+  font-weight: $fw-bold;
+}
+
+.section-number {
+  position: relative;
+  margin: 4rem auto;
+  width: 56px;
+  height: 140px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 84px;
+    width: 1px;
+    background-color: $clr-500-transparent;
+  }
+
+  span {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 1px solid $clr-500-transparent;
+    background-color: $clr-100;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-weight: $fw-bold;
+  }
+}
+
+.button {
+  border: none;
+  color: $clr-100;
+  font-weight: $fw-bold;
+  border-radius: 30px;
+  white-space: nowrap;
+
+  cursor: pointer;
+  align-self: center;
+  transition: 0.1s;
+
+  &.button-cyan {
+    background-color: $clr-cyan-dark;
+    padding: 1rem 2.5rem;
+    &:hover { background-color: $clr-cyan-medium; }
+
+    span { color: $clr-cyan-light; }
+  }
+
+  &.button-pink {
+    background-color: $clr-pink-dark;
+    padding: 1rem 1.875rem;
+    &:hover { background-color: $clr-pink-medium; }
+
+    span { color: $clr-pink-light; }
+  }
+}
+
+@media (min-width: $tablet) {
+  .section-number {
+    margin-top: 5rem;
+    margin-bottom: 4.188rem;
+  }
+
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .subcontainer {
+    padding: 0 3.5rem;
+  }
+
+  .subheader {
+    font-size: $fs-header-mobile;
+    line-height: $lh-header-mobile;
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (min-width: $desktop) {
+  .section-number {
+    margin-top: 6.875rem;
+    margin-bottom: 4rem;
+  }
+
+  .subcontainer {
+    padding: 0;
+  }
+}

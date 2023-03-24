@@ -1,0 +1,25 @@
+/* COLORS */
+/* TYPE */
+/* BREAKPOINTS */
+.header {
+  padding-top: 3rem;
+  margin-bottom: 3.375rem;
+}
+
+.header .header__logo {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding-top: 5rem;
+    margin-bottom: 3.75rem;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdmFyaWFibGVzLnNjc3MiLCIuLi9zYXNzL2hlYWRlci5zY3NzIiwiaGVhZGVyLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxXQUFBO0FBZ0JBLFNBQUE7QUF3QkEsZ0JBQUE7QUN2Q0E7RUFDRSxpQkFBaUI7RUFDakIsdUJBQXVCO0FDRXpCOztBREpBO0VBS0ksY0FBYztBQ0dsQjs7QURDQTtFQUNFO0lBQVUsbUJBQW1CO0VDRzdCO0FBQ0Y7O0FEREE7RUFDRTtJQUNFLGlCQUFpQjtJQUNqQixzQkFBc0I7RUNJeEI7QUFDRiIsImZpbGUiOiJoZWFkZXIuY3NzIn0= */
