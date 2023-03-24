@@ -46,7 +46,7 @@
   .hero { gap: 2rem; }
 
   .hero__image {
-    width: auto;
+    flex-basis: 50%;
     max-width: 394px;
   
     &.hero__image-left { margin-left: -26px; }
